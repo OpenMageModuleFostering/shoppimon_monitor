@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package>
+    <name>Shoppimon_Monitor</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="https://www.shoppimon.com/terms-of-use.html">Shoppimon's Terms Of Use</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Find and fix issues, faster than ever before. Get Shoppimon performance insights in your Magento dashboard.</summary>
+    <description>&lt;h2&gt;Monitoring Your Magento Business&lt;/h2&gt;&#xD;
+&#xD;
+Monitoring by Shoppimon gives you all the necessary performance insights into your store directly from the Magento dashboard. Get key store health trends, and real-time alerts on any issues impacting your business's health.  &#xD;
+&#xD;
+&lt;strong&gt;&lt;a href"https://www.shoppimon.com/#sign-up"&gt;Sign up for Shoppimon&lt;/a&gt; today, it's free!&lt;/strong&gt;&#xD;
+&#xD;
+&lt;h2&gt;Benefits &amp; Advantages of Monitoring by Shoppimon&lt;/h2&gt;&#xD;
+&lt;ul&gt;&#xD;
+&lt;li&gt;Integrate your Shoppimon account with your Magento dashboard&lt;/li&gt;&#xD;
+&lt;li&gt;Get 24/7/365 real-time alerts on any issues preventing customers from completing store purchases&lt;/li&gt; &#xD;
+&lt;li&gt;Understand how your store is performing, compared to the competition&lt;/li&gt;&#xD;
+&lt;li&gt;Get straight to the root cause of store issues to fix them immediately&lt;/li&gt;&#xD;
+&lt;/ul&gt;</description>
+    <notes>--</notes>
+    <authors><author><name>Wladyslaw Brodsky</name><user>wladyslaw</user><email>wladyslaw@shoppimon.com</email></author><author><name>Danny Berger</name><user>danny</user><email>danny@shoppimon.com</email></author></authors>
+    <date>2016-05-05</date>
+    <time>11:44:06</time>
+    <contents><target name="magecommunity"><dir name="Shoppimon"><dir name="Monitor"><dir name="Helper"><file name="Data.php" hash="c09df032388b57260d16101d2570bfe7"/></dir><dir name="Model"><file name="Analyzer.php" hash="e1cb0309cb0ca988138a91228e4a3678"/><file name="Observer.php" hash="2a7a6fdb85c17061c8097d9dd9b3ec52"/></dir><dir name="controllers"><file name="MonitorController.php" hash="276f3510c4aa2a2210bf9aff3964dc99"/></dir><dir name="etc"><file name="adminhtml.xml" hash="186d3dfd6eb04ea6d4ddca27b518aef8"/><file name="config.xml" hash="e26e045aa7038e4915afa7539ddb78ea"/><file name="system.xml" hash="bf62b70683cf1975eebd8feb9db509df"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Shoppimon_Monitor.xml" hash="e8101cd81eb5684ab28cda50aea3da67"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="shoppimon.xml" hash="241e0b3addafc769d880893507af8371"/></dir><dir name="template"><dir name="shoppimon"><file name="dashboard.phtml" hash="aa97c7aec006f79f274e54b93a778f35"/></dir></dir></dir></dir></dir></target><target name="mage"><dir name="."><file name="readme_shoppimon.txt" hash="40efbfb7b7741dbbe37eeea28275a133"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!--
+ (c) 2016 Shoppimon LTD, all rights reserved
+
+ @author wladyslaw@shoppimon.com
+ @license https://www.shoppimon.com/terms-of-use.html
+-->
+<config>
+    <modules>
+        <Shoppimon_Monitor>
+            <version>1.0.0</version>
+        </Shoppimon_Monitor>
+    </modules>
+    <global>
+        <helpers>
+            <Shoppimon_Monitor>
+                <class>Shoppimon_Monitor_Helper</class>
+            </Shoppimon_Monitor>
+        </helpers>
+        <models>
+            <Shoppimon_Monitor>
+                <class>Shoppimon_Monitor_Model</class>
+            </Shoppimon_Monitor>
+        </models>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Shoppimon_Monitor after="Mage_Adminhtml">Shoppimon_Monitor</Shoppimon_Monitor>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <Shoppimon_Monitor>
+                    <file>shoppimon.xml</file>
+                </Shoppimon_Monitor>
+            </updates>
+        </layout>
+    </adminhtml>
+    <crontab>
+        <jobs>
+            <shoppimon_data_processor>
+                <schedule>
+                    <cron_expr>0 2 * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>shoppimon_monitor/observer::analyzeData</model>
+                </run>
+            </shoppimon_data_processor>
+        </jobs>
+    </crontab>
+    <defaults>
+        <shoppimon>
+            <settings>
+                <show_dashboard>1</show_dashboard>
+                <push_url>https://collect.shoppimon.com/magento/site-data</push_url>
+            </settings>
+        </shoppimon>
+    </defaults>
+</config>

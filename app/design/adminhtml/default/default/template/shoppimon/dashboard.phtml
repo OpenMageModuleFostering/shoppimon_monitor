@@ -1,0 +1,15 @@
+<?php
+/**
+ * (c) 2016 Shoppimon LTD, all rights reserved
+ *
+ * @author wladyslaw@shoppimon.com
+ * @license https://www.shoppimon.com/terms-of-use.html
+ */
+?>
+<script>
+    var shoppimonWebsiteId = '<?php echo Mage::getStoreConfig('shoppimon/settings/website_id'); ?>';
+    var shoppimonAuthToken = '<?php echo Mage::getSingleton('admin/session')->getShoppimonToken(); ?>';
+</script>
+<div id="shoppimon_dashboard">
+    <?php echo $this->content; ?>
+</div>

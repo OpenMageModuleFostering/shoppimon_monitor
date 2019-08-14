@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+ (c) 2016 Shoppimon LTD, all rights reserved
+
+ @author wladyslaw@shoppimon.com
+ @license https://www.shoppimon.com/terms-of-use.html
+-->
+<layout>
+   <adminhtml_monitor_index>
+       <reference name="content">
+           <block type="core/template" name="shoppimon_monitor_dashboard" template="shoppimon/dashboard.phtml" />
+       </reference>
+   </adminhtml_monitor_index>
+</layout>

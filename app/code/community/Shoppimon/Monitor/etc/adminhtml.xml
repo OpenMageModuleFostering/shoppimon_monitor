@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!--
+ (c) 2016 Shoppimon LTD, all rights reserved
+
+ @author wladyslaw@shoppimon.com
+ @license https://www.shoppimon.com/terms-of-use.html
+-->
+<config>
+    <menu>
+        <shoppimon translate="title" module="Shoppimon_Monitor">
+            <title>Shoppimon</title>
+            <sort_order>1000</sort_order>
+            <children>
+                <monitor>
+                    <title>Business Monitoring</title>
+                    <sort_order>1</sort_order>
+                    <action>adminhtml/monitor/index</action>
+                </monitor>
+            </children>
+            <depends>
+                <config>shoppimon/settings/show_dashboard</config>
+            </depends>
+        </shoppimon>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <shoppimon translate="title" module="Shoppimon_Monitor">
+                        <title>Shoppimon Business Monitoring Menu Item</title>
+                        <sort_order>1</sort_order>
+                    </shoppimon>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <shoppimon>
+                                        <title>Shoppimon - All</title>
+                                    </shoppimon>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+ (c) 2016 Shoppimon LTD, all rights reserved
+
+ @author wladyslaw@shoppimon.com
+ @license https://www.shoppimon.com/terms-of-use.html
+-->
+<config>
+  <modules>
+    <Shoppimon_Monitor>
+      <active>true</active>
+      <codePool>community</codePool>
+    </Shoppimon_Monitor>
+  </modules>
+</config>
