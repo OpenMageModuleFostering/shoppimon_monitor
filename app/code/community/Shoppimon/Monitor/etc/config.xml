@@ -55,12 +55,12 @@
             </shoppimon_data_processor>
         </jobs>
     </crontab>
-    <defaults>
+    <default>
         <shoppimon>
             <settings>
                 <show_dashboard>1</show_dashboard>
                 <push_url>https://collect.shoppimon.com/magento/site-data</push_url>
             </settings>
         </shoppimon>
-    </defaults>
+    </default>
 </config>
