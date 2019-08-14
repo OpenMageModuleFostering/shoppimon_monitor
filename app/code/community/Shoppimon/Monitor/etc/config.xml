@@ -50,7 +50,7 @@
                     <cron_expr>0 2 * * *</cron_expr>
                 </schedule>
                 <run>
-                    <model>shoppimon_monitor/observer::analyzeData</model>
+                    <model>Shoppimon_Monitor/Observer::analyzeData</model>
                 </run>
             </shoppimon_data_processor>
         </jobs>
