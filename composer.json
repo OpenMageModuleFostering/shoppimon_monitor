@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Shoppimon_Monitor",
+    "name": "OpenMageModuleFostering\/Shoppimon_Monitor",
     "type": "magento-module",
     "license": "Shoppimon's-Terms-Of-Use",
     "homepage": "",
     "description": "Find and fix issues, faster than ever before. Get Shoppimon performance insights in your Magento dashboard.",
     "authors": [
-    {
-        "name": "Wladyslaw Brodsky",
-        "email": "wladyslaw@shoppimon.com"
-    }
-],
+        {
+            "name": "Wladyslaw Brodsky",
+            "email": "wladyslaw@shoppimon.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
